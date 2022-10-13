@@ -1,13 +1,14 @@
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    margin-right: em;
 }
 
 .search {
     background:#ffff;
     border:2px solid rgb(230, 225, 225);
     height: 45px;
-    margin-left: 17rem;
+    margin-left: 30rem;
 }
 
 .nav {
@@ -18,16 +19,26 @@ h1 {
 
 #konten {
     display: flex;
-    margin-top: 2rem;
-    margin-left: 13rem;
-}
-
-.card {
-    margin-right: 1em;
+    /* margin-top: 2rem; */
+    margin-left: 8rem;
 }
 
 #search {
     display: flex;
-    margin-top: 2rem;
-    margin-left: 13rem;
+    /* margin-top: 2rem; */
+    margin-left: 8rem;
+}
+
+.card-rate {
+    margin-top: 1em;
+    text-align: right;
+    margin-right: 0.5em;
+}
+
+.card {
+    margin: 2rem auto ;
+}
+
+.card-text {
+    text-align: bottom;
 }
