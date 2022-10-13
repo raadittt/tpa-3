@@ -9,16 +9,19 @@ let movieSearch = async () => {
   
     mencariMovie.results.forEach((item) => {
       hasilSearch.innerHTML += `<div class="card" style="width: 20rem">
-          <img src="https://image.tmdb.org/t/p/w500/${item.poster_path}" class="card-img-top" alt="..." />
+      <img src="https://image.tmdb.org/t/p/w500/${item.poster_path}" class="card-img-top" alt="..." />
+      <div class="row">
+        <div class="col-9">
           <div class="card-body">
             <h5 id="card-title">${item.title}</h5>
-            <p class="">${item.overview}</p>
+            <p class="card-text">${item.release_date}</p>
           </div>
-          <ul class="list-group list-group-flush">
-          <li class="list-group-item"><b>${item.release_date}</b></li>
-            <li class="list-group-item"><b>${item.vote_average}</b></li>
-          </ul>
-        </div>`;
+        </div>
+        <div class="col-3">
+          <p class="card-rate"><b>${item.vote_average}</b></p>
+        </div>
+      </div>
+    </div>`;
     });
   };
   
